@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "showform";
+}
+
+<h1>REGISTRATION FORM</h1>
+
+<div class="container">
+    <form method="post" action="/home/userresponse">
+
+        <TABLE BORDER="1">
+            <TR>
+                <TD>First Name:</TD>
+                <TD>
+                    <INPUT TYPE="TEXT" NAME="firstname" SIZE="25">
+                </TD>
+            </TR>
+            <TR>
+                <TD>Last Name:</TD>
+                <TD><INPUT TYPE="TEXT" NAME="lastname" SIZE="25"></TD>
+            </TR>
+            <TR>
+                <TD><label for="phonenumber">Phone Number:</label></TD>
+                <TD><INPUT TYPE="tel" placeholder="123-444-5555" id="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" SIZE="25"></TD>
+            </TR>
+            <TR>
+                <TD><label for="email">Email Address:</label></TD>
+                <TD><INPUT TYPE="email" placeholder="eg Sparty@msu.edu" id="email" pattern=".+&#64.+&#46.+" SIZE="25"></TD>
+            </TR>
+            <TR>
+                <TD>Password:</TD>
+                <TD><INPUT TYPE="password" placeholder="Password" id="password" SIZE="25" required></TD>
+            </TR>
+            <TR>
+                <TD>Confirm Password:</TD>
+                <TD><INPUT TYPE="password" placeholder="Retype Password" id="confirmpassword" SIZE="25" required></TD>
+            </TR>
+        </TABLE>
+        <!--<small>Phone Format: 123-456-7890</small> -->
+
+
+        <br /><br />
+        <p>Please select your age:</p>
+        <input type="radio" id="age1" name="age" value="17">
+        <label for="age1">0 - 17</label>
+        <br />
+        <input type="radio" id="age2" name="age" value="39">
+        <label for="age2">18 - 39</label>
+        <br />
+        <input type="radio" id="age3" name="age" value="49">
+        <label for="age3">40 - 49</label>
+        <br />
+        <input type="radio" id="age4" name="age" value="100">
+        <label for="age3">50 - 100</label>
+        <br />
+        <input type="radio" id="age4" name="age" value="101">
+        <label for="age3">Mind your business!</label>
+        <br />
+        <br />
+
+        <br />
+        <P><INPUT TYPE="SUBMIT" VALUE="Submit" NAME="B1"></P><br />
+        <input type="reset" />
+    </form>
+</div>
+
+
+<!-- <div id="message">
+    <h3>Password must contain the following:</h3>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="number" class="invalid">A <b>number</b></p>
+    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+    -->
+

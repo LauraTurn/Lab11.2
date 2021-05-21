@@ -1,0 +1,27 @@
+﻿@model List<NUser>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    a {
+        color: blue;
+        font-weight: bold;
+        font-family: 'Times'
+    }
+</style>
+
+
+<div class="text-center">
+    <h1> Welcome to Hot Grounds</h1>
+</div>
+
+<br />
+<img src="/images/Coffee.jpg"
+     width="600"
+     height="500" />
+<br />
+<br />
+<br />
+
+@Html.ActionLink("Click here to register!", "showform")
